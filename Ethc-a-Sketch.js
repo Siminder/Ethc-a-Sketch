@@ -4,13 +4,18 @@
 
 let createDiv = (size) => {
     const container = document.querySelector("#container");
-    
-    
-    for(let d = 0; d < size * size; d++ ){
+    const boxSize = Math.floor(800 / size); 
+
+    const boxesPerRow = Math.floor(800 / boxSize);  // How many boxes per row
+    const boxesPerColumn = Math.floor(800 / boxSize); // how many boxers per column
+
+
+
+    for(let d = 0; d < boxesPerRow * boxesPerColumn; d++ ){
         const box = document.createElement("div")
         box.classList.add("box")
-         box.style.width =`${960/size}px`;
-        box.style.height =`${960/ size}px`;
+         box.style.width =`${boxSize}px`;
+        box.style.height =`${boxSize}px`;
 
 
        
@@ -36,4 +41,4 @@ let createDiv = (size) => {
 
 
 
-createDiv(64);
+createDiv(16);
