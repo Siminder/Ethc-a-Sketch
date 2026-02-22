@@ -1,5 +1,5 @@
 # Ethc-a-Sketch
-# This project is a demestoration of DOM and javascrtipt usage
+### This project is a demestoration of DOM and javascrtipt usage
 # I started with making a fucntion that loop a random size to make that many div and populate my container 
 # after adding my css and using flex-wrap and flexbox to help me wrap them around in my container 
 # I also added a button that has a click event listener 
