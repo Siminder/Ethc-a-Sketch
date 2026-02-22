@@ -1,4 +1,14 @@
 
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform: rotate(-10deg); /* Tilt the text */
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -6,18 +16,38 @@ body{
     margin: 0;
     padding: 0;
     flex-direction: column;
+    background-color: whitesmoke;
 }
-button{
-  background-color: #04AA6D;
-  border: none;
-  color:white;
-  text-align: center;
-  padding: 15px 32px;
-  border-radius: 10px;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;  
+
+
+
+button {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    padding: 10px 30px;
+    color: #333;
+    background-color: #f1f1f1; /* Soft, neutral background */
+    border: 2px solid #ddd; /* Light border */
+    border-radius: 8px; /* Soft rounded corners */
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.2s ease; /* Smooth transition */
 }
+
+button:hover {
+    background-color: #e2e2e2; /* Slightly darker background on hover */
+    border-color: #bbb; /* Darker border on hover */
+    color: #222; /* Darker text on hover */
+}
+
+button:focus {
+    outline: none; /* Removes outline on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Soft focus glow */
+}
+
+
 
 .container {
     border: 1px solid black;
