@@ -69,7 +69,7 @@ let resize = () => {
         size = Number(prompt("please enter a number 1-100"));
 
         // checks if size is in 1-100  else alert that a invaild input
-        if(size > 1 && size < 100){
+        if(size >= 1 && size <= 100){
             //pass size to funciton 
             createDiv(size);
          } else{
